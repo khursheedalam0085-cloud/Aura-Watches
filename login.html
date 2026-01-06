@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+
+    <!-- LINKS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-box" id="formBox">
+                <!-- Login Form -->
+                <div class="login-form">
+                    <div class="form-header">
+                        <h2>Login</h2>
+                        <span class="toggle-form" id="showSignup">Sign Up</span>
+                    </div>
+                    
+                    <div class="message" id="loginMessage"></div>
+                    
+                    <div class="input-box">
+                        <input type="text" id="loginUsername" placeholder="Username" required>
+                        <i class="ri-user-fill"></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                        <i class="ri-eye-off-fill toggle-password" id="toggleLoginPassword"></i>
+                    </div>
+                    
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox" id="rememberMe">
+                            Remember Me
+                        </label>
+                        <a href="#" id="forgotPassword">Forgot Password?</a>
+                    </div>
+                    
+                    <button class="btnn" id="loginBtn">Login</button>
+                    
+                    <div class="social-login">
+                        <a href="#"><i class="ri-google-fill"></i></a>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Signup Form -->
+                <div class="signup-form">
+                    <div class="form-header">
+                        <h2>Sign Up</h2>
+                        <span class="toggle-form" id="showLogin">Login</span>
+                    </div>
+                    
+                    <div class="message" id="signupMessage"></div>
+                    
+                    <div class="input-box">
+                        <input type="text" id="signupUsername" placeholder="Username" required>
+                        <i class="ri-user-fill"></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="email" id="signupEmail" placeholder="Email" required>
+                        <i class="ri-mail-fill"></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="password" id="signupPassword" placeholder="Password" required>
+                        <i class="ri-eye-off-fill toggle-password" id="toggleSignupPassword"></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                        <i class="ri-lock-fill"></i>
+                    </div>
+                    
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox" id="agreeTerms" required>
+                            I agree to the terms & conditions
+                        </label>
+                    </div>
+                    
+                    <button class="btnn" id="signupBtn">Sign Up</button>
+                    
+                    <div class="social-login">
+                        <a href="#"><i class="ri-google-fill"></i></a>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVA SCRIPT LINK  -->
+<script src="assets/js/login.js"></script>
+
+</body>
+</html>

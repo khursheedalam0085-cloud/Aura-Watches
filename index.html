@@ -1,0 +1,2328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aura Watches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="icon" type="image/png" href="assets/icons/icon.png">
+
+
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <!-- Header & Navigation -->
+    <div class="index" id="index">
+        <header>
+            <div class="container header-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <a href="./index.html"><h1>AURA<span>WATCHES</span></h1></a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="#index">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#store-locator">Store Locator</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                    <!-- Cart Icon -->
+                    <!-- Cart Icon -->
+                    <a href="#" class="cart-icon position-relative" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartOffcanvas">
+                        <i class="bi bi-cart3 fs-3"></i>
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+
+                    <!-- Profile Icon (Replaces Login/Signup buttons) -->
+                    <div class="profile-icon-container" id="profileContainer">
+                        <div class="profile-icon" id="profileIcon">
+                            <i class="fas fa-user" id="profileIconDefault"></i>
+                            <span class="profile-letter" id="profileLetter"></span>
+                        </div>
+                        <div class="profile-dropdown" id="profileDropdown">
+                            <div class="profile-info">
+                                <div class="profile-avatar" id="dropdownAvatar">
+                                    <i class="fas fa-user" id="dropdownIcon"></i>
+                                    <span class="profile-letter-dropdown" id="dropdownLetter"></span>
+                                </div>
+                                <div class="profile-details">
+                                    <h4 id="dropdownUsername">Guest User</h4>
+                                    <p id="dropdownEmail">Login to access your account</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item" id="loginDropdownBtn">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                            <a href="#" class="dropdown-item" id="signupDropdownBtn">
+                                <i class="fas fa-user-plus"></i> Sign Up
+                            </a>
+                            <a href="#" class="dropdown-item hidden" id="myProfileBtn">
+                                <i class="fas fa-user-circle"></i> My Profile
+                            </a>
+                            <a href="#" class="dropdown-item hidden" id="myOrdersBtn">
+                                <i class="fas fa-shopping-bag"></i> My Orders
+                            </a>
+                            <a href="#" class="dropdown-item hidden" id="logoutBtn">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="header">
+            <h1>More Than Time — It's a Statement</h1>
+            <p>"Crafted with precision, designed for those who value every second."</p>
+            <div>
+                <a href="#products"><button id="Explore" class="btn btn-light">Explore</button></a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="description-container">
+            <div class="description-text">
+                <h2>Crafting Legacy in Gold</h2>
+                <p>At <span class="highlight">Aura Watches</span>, we redefine luxury timekeeping through the perfect
+                    harmony of <span class="highlight">black, white, and gold</span>. Each timepiece is a testament to
+                    the art of precision engineering and timeless design.</p>
+
+                <p>Our collections feature <span class="highlight">24-karat gold plating</span>, sapphire crystal glass,
+                    and Swiss automatic movements, all encased in sleek black or polished white finishes. The contrast
+                    creates a visual symphony that commands attention while maintaining sophisticated subtlety.</p>
+
+                <p>An Aura Watch is more than an accessory—it's a statement of refinement, a marker of achievement, and
+                    a companion for life's defining moments.</p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>24K Gold Accents</h4>
+                            <p>Genuine gold plating with diamond-cut indices</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Swiss Precision</h4>
+                            <p>Automatic movements with 72-hour power reserve</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Sapphire Crystal</h4>
+                            <p>Scratch-resistant glass with anti-reflective coating</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Limited Editions</h4>
+                            <p>Individually numbered pieces with certificates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description-visual">
+                <div class="watch-display">
+                    <div class="watch-numbers">
+                        <div class="number n12">XII</div>
+                        <div class="number n3">III</div>
+                        <div class="number n6">VI</div>
+                        <div class="number n9">IX</div>
+                    </div>
+
+                    <div class="watch-face">
+                        <div class="watch-brand">AURA</div>
+                        <div class="watch-time" id="current-time">10:08</div>
+                        <div class="watch-date" id="current-date">MON 17 JUN</div>
+                    </div>
+
+                    <div class="watch-hands">
+                        <div class="hand hour-hand"></div>
+                        <div class="hand minute-hand"></div>
+                        <div class="hand second-hand"></div>
+                        <div class="center-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <h2 id="products">Products</h2>
+    <div class="category">
+        <div class="card-box">
+            <a href="#watches">
+                <div class="card">
+                    <img src="assets/images/watches/pexels-ferarcosn-190819.jpg">
+                    <div class="card-body text-center">
+                        <h5>Watches</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card-box">
+            <a href="#clockes">
+                <div class="card">
+                    <img src="assets/images/clocks/vintage wall clock.webp">
+                    <div class="card-body text-center">
+                        <h5>Clocks</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- WATCHES PRODUCTS -->
+    <section id="watches" class="container my-5">
+        <h2 class="text-center mb-4">Watches</h2>
+
+        <!-- FILTER BUTTONS -->
+        <div class="text-center mb-4">
+            <button class="btn btn-dark m-1" onclick="filterWatches('all')">All</button>
+            <button class="btn btn-dark m-1" onclick="filterWatches('Smart')">Smart</button>
+            <button class="btn btn-dark m-1" onclick="filterWatches('Sports')">Sports</button>
+            <button class="btn btn-dark m-1" onclick="filterWatches('Luxury')">Luxury</button>
+            <button class="btn btn-dark m-1" onclick="filterWatches('Casual')">Casual</button>
+        </div>
+
+        <!-- CARDS -->
+        <div class="row g-4">
+            <div class="col-md-3 card-box" data-category="Smart">
+                <div class="card">
+                    <img src="assets/images/watches/apple-watch-ultra-1.jpg">
+                    <div class="card-body text-center">
+                        <h5>Apple Watch S7 Ultra</h5>
+                        <p>Rs 3,00,000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Smart">
+                <div class="card">
+                    <img src="assets/images/watches/samsung ultra.webp">
+                    <div class="card-body text-center">
+                        <h5>Samsung Galaxy S6</h5>
+                        <p>Rs 70000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Smart">
+                <div class="card">
+                    <img src="assets/images/watches/HUAWEI.webp">
+                    <div class="card-body text-center">
+                        <h5>Huawei</h5>
+                        <p>Rs 60000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Smart">
+                <div class="card">
+                    <img src="assets/images/watches/xiaomi.webp">
+                    <div class="card-body text-center">
+                        <h5>Xiaomi</h5>
+                        <p>Rs 120000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Sports">
+                <div class="card">
+                    <img src="assets/images/watches/garmin.png">
+                    <div class="card-body text-center">
+                        <h5>Garmin</h5>
+                        <p>Rs 10,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Sports">
+                <div class="card">
+                    <img src="assets/images/watches/casio g-shock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Casio G-Shock</h5>
+                        <p>Rs 13,499</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Sports">
+                <div class="card">
+                    <img src="assets/images/watches/suunto.jpg">
+                    <div class="card-body text-center">
+                        <h5>Suunto</h5>
+                        <p>Rs 22,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Sports">
+                <div class="card">
+                    <img src="assets/images/watches/polar.jpg">
+                    <div class="card-body text-center">
+                        <h5>Polar</h5>
+                        <p>Rs 9,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Luxury">
+                <div class="card">
+                    <img src="assets/images/watches/rolex.jpg">
+                    <div class="card-body text-center">
+                        <h5>Rolex</h5>
+                        <p>Rs 2,500,000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Luxury">
+                <div class="card">
+                    <img src="assets/images/watches/omega.jpg">
+                    <div class="card-body text-center">
+                        <h5>Omega</h5>
+                        <p>Rs 99,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-box" data-category="Luxury">
+                <div class="card">
+                    <img src="assets/images/watches/tag heuer.jpg">
+                    <div class="card-body text-center">
+                        <h5>Tag Heuer</h5>
+                        <p>Rs 90,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Luxury">
+                <div class="card">
+                    <img src="assets/images/watches/cartier.jpg">
+                    <div class="card-body text-center">
+                        <h5>Cartier</h5>
+                        <p>Rs 95,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Casual">
+                <div class="card">
+                    <img src="assets/images/watches/daniel wellington.jpg">
+                    <div class="card-body text-center">
+                        <h5>Daniel Wellington</h5>
+                        <p>Rs 21,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Casual">
+                <div class="card">
+                    <img src="assets/images/watches/guess.webp">
+                    <div class="card-body text-center">
+                        <h5>Guess</h5>
+                        <p>Rs 19,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Casual">
+                <div class="card">
+                    <img src="assets/images/watches/hugo boss.jpg">
+                    <div class="card-body text-center">
+                        <h5>Hugo Boss</h5>
+                        <p>Rs 29,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Casual">
+                <div class="card">
+                    <img src="assets/images/watches/tommy helifiger.jpg">
+                    <div class="card-body text-center">
+                        <h5>Tommy Hilfiger</h5>
+                        <p>Rs 29,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOCKS PRODUCTS -->
+    <section id="clockes" class="container my-5">
+        <h2 class="text-center mb-4">Clocks</h2>
+
+        <!-- FILTER BUTTONS -->
+        <div class="text-center mb-4">
+            <button class="btn btn-dark m-1" onclick="filterClocks('all')">All</button>
+            <button class="btn btn-dark m-1" onclick="filterClocks('Wall')">Wall</button>
+            <button class="btn btn-dark m-1" onclick="filterClocks('Desk')">Desk</button>
+            <button class="btn btn-dark m-1" onclick="filterClocks('Alarm')">Alarm</button>
+            <button class="btn btn-dark m-1" onclick="filterClocks('Timer')">Timer</button>
+        </div>
+
+        <!-- CARDS -->
+        <div class="row g-4">
+            <div class="col-md-3 card-box" data-category="Wall">
+                <div class="card">
+                    <img src="assets/images/clocks/vintage wall clock.webp">
+                    <div class="card-body text-center">
+                        <h5>Vintage Wall Clock</h5>
+                        <p>Rs 3,000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Wall">
+                <div class="card">
+                    <img src="assets/images/clocks/acrylic wall clock.webp">
+                    <div class="card-body text-center">
+                        <h5>Acrylic Wall Clock</h5>
+                        <p>Rs 700</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Wall">
+                <div class="card">
+                    <img src="assets/images/clocks/pendullam wall clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Pendulum Wall Clock</h5>
+                        <p>Rs 6000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Wall">
+                <div class="card">
+                    <img src="assets/images/clocks/digital wall clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Digital Wall Clock</h5>
+                        <p>Rs 12000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Desk">
+                <div class="card">
+                    <img src="assets/images/clocks/office desk clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Office Desk Clock</h5>
+                        <p>Rs 10,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Desk">
+                <div class="card">
+                    <img src="assets/images/clocks/Guitar Desk clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Guitar Desk Clock</h5>
+                        <p>Rs 13,499</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Desk">
+                <div class="card">
+                    <img src="assets/images/clocks/Astronaut Desk Clock.webp">
+                    <div class="card-body text-center">
+                        <h5>Astronaut Desk Clock</h5>
+                        <p>Rs 22,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Desk">
+                <div class="card">
+                    <img src="assets/images/clocks/panda desk clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Panda Desk Clock</h5>
+                        <p>Rs 9,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Alarm">
+                <div class="card">
+                    <img src="assets/images/clocks/analog alarm clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Analog Alarm Clock</h5>
+                        <p>Rs 2,500</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Alarm">
+                <div class="card">
+                    <img src="assets/images/clocks/Wooden-led-alarm-clock-4.jpg">
+                    <div class="card-body text-center">
+                        <h5>Wooden Alarm Clock</h5>
+                        <p>Rs 9,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-box" data-category="Alarm">
+                <div class="card">
+                    <img src="assets/images/clocks/alarm+lamp clock.webp">
+                    <div class="card-body text-center">
+                        <h5>Lamp Alarm Clock</h5>
+                        <p>Rs 11,000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-box" data-category="Alarm">
+                <div class="card">
+                    <img src="assets/images/clocks/kitty alarm clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Kitty Alarm Clock</h5>
+                        <p>Rs 5000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Timer">
+                <div class="card">
+                    <img src="assets/images/clocks/timer clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Simple Timer Clock</h5>
+                        <p>Rs 1800</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Timer">
+                <div class="card">
+                    <img src="assets/images/clocks/mosque timer clock.jpg">
+                    <div class="card-body text-center">
+                        <h5>Mosque Timer Clock</h5>
+                        <p>Rs 19,999</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Timer">
+                <div class="card">
+                    <img src="assets/images/clocks/analog timer.jpg">
+                    <div class="card-body text-center">
+                        <h5>Analog Timer</h5>
+                        <p>Rs 2000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card-box" data-category="Timer">
+                <div class="card">
+                    <img src="assets/images/clocks/sports timer.jpg">
+                    <div class="card-body text-center">
+                        <h5>Sports Timer</h5>
+                        <p>Rs 5000</p>
+                        <button class="btn btn-warning add-to-cart-btn"
+                            onclick="shoppingCart.addToCart('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning buy-now-btn"
+                            onclick="shoppingCart.buyNow('Product Name', 'Rs 3,00,000', 'image.jpg', 'Smart')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Locator -->
+    <section id="store-locator">
+        <div class="container">
+            <div class="section-title">
+                <h2>Store Locator</h2>
+                <p>Visit our authorized stores to experience Aura watches firsthand and get expert assistance.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Our Flagship Stores</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4><a href="https://www.google.com/maps/search/hydri/@24.9240051,67.0296882,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                        target="_blank">Hydri</a></h4>
+                                <p>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4><a href="https://www.google.com/maps/search/boltan/@24.8711918,66.9680259,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                        target="_blank">Bolton</a></h4>
+                                <p>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4><a href="https://www.google.com/maps/place/Qaidabad,+Pakistan/@32.339677,71.8571818,14z/data=!3m1!4b1!4m6!3m5!1s0x3926d3c8fa3826d3:0xf2780936ba9e04ec!8m2!3d32.3390711!4d71.8782065!16s%2Fg%2F11bc5j9p_7?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                        target="_blank">Qaidabad</a></h4>
+                                <p>Punjab, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Find a Store Near You</h3>
+                    <p>Use our store locator to find authorized Aura retailers in your city. All our stores offer
+                        professional assistance, warranty services, and customization options.</p>
+                    <a href="https://www.google.com/maps/@25.0222875,67.0583741,13z?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" class="cta-button mt-30" target="_blank">Find Nearest Store</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Support</h2>
+                <p>We're here to help you with any questions about your Aura timepiece.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Support Resources</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>User Manuals</h4>
+                                <p>Download product manuals and setup guides for all Aura watches.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Warranty Information</h4>
+                                <p>Learn about our 5-year international warranty and service policies.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>FAQs</h4>
+                                <p>Find answers to frequently asked questions about our products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Quick Support Form</h3>
+                    <p>Need immediate assistance? Fill out our support form and our team will get back to you within 24
+                        hours.</p>
+                    <a href="#contactForm" class="cta-button mt-30">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Have questions or need assistance? Get in touch with our customer support team.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+92 *** ** *****</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:support@aurawatches.com">support@aurawatches.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Business Hours</h4>
+                                <p>Mon-Fri: 9AM - 6PM EST<br>Sat: 10AM - 4PM EST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-30">Visit Our Stores</h3>
+                    <p>Experience Aura watches in person at our flagship stores worldwide. Our experts are available to
+                        help you find the perfect timepiece.</p>
+                    <a href="#store-locator" class="cta-button mt-30">View Store Locations</a>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                    <form id="contactForm" class="contact-form mt-30">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control"
+                                placeholder="Enter your full name">
+                            <div class="error-message" id="nameError">Please enter your full name (minimum 2 characters)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gmail">Email Address *</label>
+                            <input type="email" id="gmail" name="gmail" class="form-control"
+                                placeholder="Enter your email address">
+                            <div class="error-message" id="emailError">Please enter a valid email address</div>
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" id="tel" name="tel" class="form-control"
+                                placeholder="Enter your phone number">
+                            <div class="error-message" id="phoneError">Please enter a valid phone number (10-15 digits)
+                            </div>
+                        </div> -->
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option class="pay" value="">Select a subject</option>
+                                <option class="pay" value="product-inquiry">Product Inquiry</option>
+                                <option class="pay" value="technical-support">Technical Support</option>
+                                <option class="pay" value="warranty-service">Warranty Service</option>
+                                <option class="pay" value="store-info">Store Information</option>
+                                <option class="pay" value="other">Other</option>
+                            </select>
+                            <div class="error-message" id="subjectError">Please select a subject</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="Enter your message"></textarea>
+                            <div class="error-message" id="messageError">Please enter your message (minimum 10
+                                characters)</div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+                        </div>
+
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i> Thank you for your message! We'll get back to you within
+                            24 hours.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price List Download  -->
+    <div class="container text-center mt-30 mb-30">
+        <h3>Download Our Complete Price List</h3>
+        <p class="mb-30">Get detailed pricing for all our watch collections in a single document.</p>
+        <a href="#" class="cta-button" id="downloadPriceList"><i class="fas fa-download"></i> Download Price List
+            (PDF)</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Aura Watches</h3>
+                    <p>For over three decades, Aura Watches has been creating precision timepieces that combine Swiss
+                        craftsmanship with innovative technology.</p>
+                </div>
+<img src="" alt="">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#index">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#store-locator">Store Locator</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Warranty Information</a></li>
+                        <li><a href="#">User Manuals</a></li>
+                        <li><a href="#">Service Centers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Aura Watches. All rights reserved. | Crafted with precision since 1990</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+
+        function addToCart() {
+            cartCount++;
+            document.getElementById("cart-count").innerText = cartCount;
+            const badge = document.getElementById("cart-count");
+            badge.style.display = cartCount > 0 ? "inline-block" : "none";
+
+            // Add animation effect
+            badge.style.transform = "scale(1.2)";
+            setTimeout(() => {
+                badge.style.transform = "scale(1)";
+            }, 300);
+        }
+        // Shopping Cart System
+        class ShoppingCart {
+            constructor() {
+                this.cart = JSON.parse(localStorage.getItem('cart')) || [];
+                this.cartCount = this.calculateCartCount();
+                this.offcanvas = null;
+                this.modal = null;
+                this.bsOffcanvas = null;
+                this.bsModal = null;
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.updateCartDisplay();
+                this.loadCartFromStorage();
+            }
+
+            setupEventListeners() {
+                // Cart icon click
+                const cartIcon = document.querySelector('.cart-icon');
+                if (cartIcon) {
+                    cartIcon.addEventListener('click', (e) => {
+                        e.preventDefault();
+                    });
+                }
+
+                // Initialize Bootstrap components
+                this.offcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+                this.modal = new bootstrap.Modal(document.getElementById('checkoutModal'));
+                this.successModal = new bootstrap.Modal(document.getElementById('successModal'));
+
+                // Checkout button in cart
+                const checkoutBtn = document.getElementById('checkoutBtn');
+                if (checkoutBtn) {
+                    checkoutBtn.addEventListener('click', () => this.openCheckoutModal());
+                }
+
+                // Confirm order button
+                const confirmOrderBtn = document.getElementById('confirmOrderBtn');
+                if (confirmOrderBtn) {
+                    confirmOrderBtn.addEventListener('click', () => this.confirmOrder());
+                }
+
+                // Close cart offcanvas when checkout modal opens
+                document.getElementById('checkoutModal').addEventListener('show.bs.modal', () => {
+                    this.offcanvas.hide();
+                });
+            }
+
+            loadCartFromStorage() {
+                const savedCart = localStorage.getItem('cart');
+                if (savedCart) {
+                    this.cart = JSON.parse(savedCart);
+                    this.updateCartDisplay();
+                }
+            }
+
+            saveCartToStorage() {
+                localStorage.setItem('cart', JSON.stringify(this.cart));
+            }
+
+            calculateCartCount() {
+                return this.cart.reduce((total, item) => total + item.quantity, 0);
+            }
+
+            // Add product to cart with modal support
+            addToCart(productName, price, imageSrc, category) {
+                // Generate unique ID for product
+                const productId = `${category}-${productName.replace(/\s+/g, '-').toLowerCase()}`;
+
+                const existingItem = this.cart.find(item => item.id === productId);
+
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    this.cart.push({
+                        id: productId,
+                        name: productName,
+                        price: parseInt(price.replace(/[^0-9]/g, '')),
+                        image: imageSrc,
+                        category: category,
+                        quantity: 1
+                    });
+                }
+
+                this.updateCart();
+                this.showAddToCartNotification(productName);
+            }
+
+            // Direct buy now function (opens checkout modal directly)
+            buyNow(productName, price, imageSrc, category) {
+                // Clear cart and add only this item
+                this.cart = [{
+                    id: `buynow-${Date.now()}`,
+                    name: productName,
+                    price: parseInt(price.replace(/[^0-9]/g, '')),
+                    image: imageSrc,
+                    category: category,
+                    quantity: 1
+                }];
+
+                this.updateCart();
+                this.openCheckoutModal();
+            }
+
+            removeItem(productId) {
+                this.cart = this.cart.filter(item => item.id !== productId);
+                this.updateCart();
+            }
+
+            updateQuantity(productId, newQuantity) {
+                if (newQuantity < 1) {
+                    this.removeItem(productId);
+                    return;
+                }
+
+                const item = this.cart.find(item => item.id === productId);
+                if (item) {
+                    item.quantity = newQuantity;
+                    this.updateCart();
+                }
+            }
+
+            updateCart() {
+                this.cartCount = this.calculateCartCount();
+                this.updateCartDisplay();
+                this.saveCartToStorage();
+            }
+
+            updateCartDisplay() {
+                // Update cart count badge
+                const cartCountElement = document.getElementById('cart-count');
+                if (cartCountElement) {
+                    cartCountElement.textContent = this.cartCount;
+                    cartCountElement.style.display = this.cartCount > 0 ? 'inline-block' : 'none';
+
+                    // Add animation
+                    cartCountElement.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        cartCountElement.style.transform = 'scale(1)';
+                    }, 300);
+                }
+
+                // Update cart items in offcanvas
+                this.updateCartItems();
+
+                // Update cart summary
+                this.updateCartSummary();
+            }
+
+            updateCartItems() {
+                const cartItemsContainer = document.getElementById('cartItems');
+                const emptyCartMessage = document.getElementById('emptyCartMessage');
+                const checkoutBtn = document.getElementById('checkoutBtn');
+
+                if (this.cart.length === 0) {
+                    if (emptyCartMessage) emptyCartMessage.style.display = 'block';
+                    if (checkoutBtn) checkoutBtn.disabled = true;
+                    return;
+                }
+
+                if (emptyCartMessage) emptyCartMessage.style.display = 'none';
+                if (checkoutBtn) checkoutBtn.disabled = false;
+
+                let cartItemsHTML = '';
+
+                this.cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    cartItemsHTML += `
+                <div class="cart-item" data-id="${item.id}">
+                    <img src="${item.image}" alt="${item.name}" onerror="this.src='https://via.placeholder.com/70x70/0a0a0a/D4AF37?text=AURA'">
+                    <div class="cart-item-details">
+                        <div class="cart-item-title">${item.name}</div>
+                        <div class="cart-item-price">Rs ${item.price.toLocaleString()}</div>
+                        <div class="cart-item-quantity">
+                            <button class="quantity-btn decrease" data-id="${item.id}">-</button>
+                            <input type="number" class="quantity-input" value="${item.quantity}" min="1" data-id="${item.id}">
+                            <button class="quantity-btn increase" data-id="${item.id}">+</button>
+                            <button class="remove-item ms-auto" data-id="${item.id}">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                        <div class="cart-item-total text-gold mt-2">
+                            Total: Rs ${itemTotal.toLocaleString()}
+                        </div>
+                    </div>
+                </div>
+            `;
+                });
+
+                if (cartItemsContainer) {
+                    cartItemsContainer.innerHTML = cartItemsHTML;
+
+                    // Add event listeners to dynamic elements
+                    cartItemsContainer.querySelectorAll('.decrease').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const id = e.target.dataset.id;
+                            const item = this.cart.find(item => item.id === id);
+                            if (item) {
+                                this.updateQuantity(id, item.quantity - 1);
+                            }
+                        });
+                    });
+
+                    cartItemsContainer.querySelectorAll('.increase').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const id = e.target.dataset.id;
+                            const item = this.cart.find(item => item.id === id);
+                            if (item) {
+                                this.updateQuantity(id, item.quantity + 1);
+                            }
+                        });
+                    });
+
+                    cartItemsContainer.querySelectorAll('.quantity-input').forEach(input => {
+                        input.addEventListener('change', (e) => {
+                            const id = e.target.dataset.id;
+                            const newQuantity = parseInt(e.target.value) || 1;
+                            this.updateQuantity(id, newQuantity);
+                        });
+                    });
+
+                    cartItemsContainer.querySelectorAll('.remove-item').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const id = e.target.closest('.remove-item').dataset.id;
+                            this.removeItem(id);
+                        });
+                    });
+                }
+            }
+
+            updateCartSummary() {
+                const subtotal = this.cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+                const tax = subtotal * 0.13; // 13% tax
+                const total = subtotal + tax;
+
+                const subtotalElement = document.getElementById('cartSubtotal');
+                const taxElement = document.getElementById('cartTax');
+                const totalElement = document.getElementById('cartTotal');
+
+                if (subtotalElement) subtotalElement.textContent = `Rs ${subtotal.toLocaleString()}`;
+                if (taxElement) taxElement.textContent = `Rs ${Math.round(tax).toLocaleString()}`;
+                if (totalElement) totalElement.textContent = `Rs ${Math.round(total).toLocaleString()}`;
+            }
+
+            updateOrderSummary() {
+                const orderSummary = document.getElementById('orderSummary');
+                const subtotal = this.cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+                const tax = subtotal * 0.13;
+                const total = subtotal + tax;
+
+                let orderHTML = '';
+                this.cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    orderHTML += `
+                <div class="order-item">
+                    <span>${item.name} x${item.quantity}</span>
+                    <span>Rs ${itemTotal.toLocaleString()}</span>
+                </div>
+            `;
+                });
+
+                if (orderSummary) {
+                    orderSummary.innerHTML = orderHTML;
+                }
+
+                // Update order totals
+                document.getElementById('orderSubtotal').textContent = `Rs ${subtotal.toLocaleString()}`;
+                document.getElementById('orderTax').textContent = `Rs ${Math.round(tax).toLocaleString()}`;
+                document.getElementById('orderTotal').textContent = `Rs ${Math.round(total).toLocaleString()}`;
+            }
+
+            openCheckoutModal() {
+                this.updateOrderSummary();
+                this.modal.show();
+            }
+
+            validateCheckoutForm() {
+                const form = document.getElementById('checkoutForm');
+                const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+                let isValid = true;
+
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        input.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+                });
+
+                // Validate email
+                const email = document.getElementById('email');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email && !emailRegex.test(email.value)) {
+                    email.classList.add('is-invalid');
+                    isValid = false;
+                }
+
+                // Validate phone
+                const phone = document.getElementById('phone');
+                const phoneRegex = /^[0-9]{10,15}$/;
+                if (phone && !phoneRegex.test(phone.value.replace(/[^0-9]/g, ''))) {
+                    phone.classList.add('is-invalid');
+                    isValid = false;
+                }
+
+                // Validate terms checkbox
+                const termsCheck = document.getElementById('termsCheck');
+                if (termsCheck && !termsCheck.checked) {
+                    termsCheck.classList.add('is-invalid');
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+
+            confirmOrder() {
+                if (!this.validateCheckoutForm()) {
+                    alert('Please fill all required fields correctly.');
+                    return;
+                }
+
+                // Collect order data
+                const orderData = {
+                    orderId: 'AURA-' + Date.now(),
+                    items: this.cart,
+                    customerInfo: {
+                        name: document.getElementById('fullName').value,
+                        email: document.getElementById('email').value,
+                        phone: document.getElementById('phone').value,
+                        address: document.getElementById('address').value,
+                        city: document.getElementById('city').value,
+                        zipCode: document.getElementById('zipCode').value,
+                        paymentMethod: document.getElementById('paymentMethod').value
+                    },
+                    total: this.cart.reduce((total, item) => total + (item.price * item.quantity), 0),
+                    timestamp: new Date().toISOString()
+                };
+
+                // Save order to localStorage (for demo purposes)
+                const orders = JSON.parse(localStorage.getItem('orders')) || [];
+                orders.push(orderData);
+                localStorage.setItem('orders', JSON.stringify(orders));
+
+                // Clear cart
+                this.cart = [];
+                this.updateCart();
+
+                // Close checkout modal
+                this.modal.hide();
+
+                // Show success modal
+                document.getElementById('orderIdDisplay').textContent = orderData.orderId;
+                setTimeout(() => {
+                    this.successModal.show();
+                }, 300);
+
+                // Reset form
+                document.getElementById('checkoutForm').reset();
+            }
+
+            showAddToCartNotification(productName) {
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = 'add-to-cart-notification';
+                notification.innerHTML = `
+            <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span>${productName} added to cart!</span>
+            </div>
+        `;
+
+                // Style notification
+                notification.style.cssText = `
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: rgba(10, 10, 10, 0.9);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #D4AF37;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            backdrop-filter: blur(10px);
+            animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+            max-width: 300px;
+        `;
+
+                // Add animation styles
+                const style = document.createElement('style');
+                style.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes fadeOut {
+                from {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+                to {
+                    opacity: 0;
+                    transform: translateX(100%);
+                }
+            }
+        `;
+                document.head.appendChild(style);
+
+                // Add to body
+                document.body.appendChild(notification);
+
+                // Remove after 3 seconds
+                setTimeout(() => {
+                    notification.remove();
+                    style.remove();
+                }, 3000);
+            }
+        }
+
+        // Initialize shopping cart
+        const shoppingCart = new ShoppingCart();
+
+        // Update all Add to Cart buttons
+        function setupProductButtons() {
+            // Add to Cart buttons
+            document.querySelectorAll('.btn-warning').forEach(button => {
+                if (button.textContent.includes('Add to Cart')) {
+                    button.addEventListener('click', function () {
+                        const card = this.closest('.card');
+                        const productName = card.querySelector('h5').textContent;
+                        const price = card.querySelector('p').textContent;
+                        const imageSrc = card.querySelector('img').src;
+                        const category = this.closest('.card-box').dataset.category || 'General';
+
+                        shoppingCart.addToCart(productName, price, imageSrc, category);
+                    });
+                }
+            });
+
+            // Buy Now buttons
+            document.querySelectorAll('.btn-warning').forEach(button => {
+                if (button.textContent.includes('Buy Now')) {
+                    button.addEventListener('click', function () {
+                        const card = this.closest('.card');
+                        const productName = card.querySelector('h5').textContent;
+                        const price = card.querySelector('p').textContent;
+                        const imageSrc = card.querySelector('img').src;
+                        const category = this.closest('.card-box').dataset.category || 'General';
+
+                        shoppingCart.buyNow(productName, price, imageSrc, category);
+                    });
+                }
+            });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            shoppingCart.init();
+            setupProductButtons();
+        });
+
+        // Update the old addToCart function to use the new system
+        window.addToCart = function () {
+            // This is for backward compatibility with existing buttons
+            const button = event.target;
+            const card = button.closest('.card');
+
+            if (card) {
+                const productName = card.querySelector('h5').textContent;
+                const price = card.querySelector('p').textContent;
+                const imageSrc = card.querySelector('img').src;
+                const category = button.closest('.card-box').dataset.category || 'General';
+
+                shoppingCart.addToCart(productName, price, imageSrc, category);
+            }
+        };
+
+        // Make shopping cart globally accessible
+        window.shoppingCart = shoppingCart;
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainMenu = document.getElementById('mainMenu');
+
+        mobileMenuBtn.addEventListener('click', function () {
+            mainMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mainMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking on links
+        document.querySelectorAll('#mainMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Update the watch time and date in real-time
+        function updateWatchTime() {
+            const now = new Date();
+
+            // Update digital time
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('current-time').textContent = `${hours}:${minutes}`;
+
+            // Update date
+            const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+            const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+            const dayName = days[now.getDay()];
+            const date = now.getDate();
+            const monthName = months[now.getMonth()];
+            document.getElementById('current-date').textContent = `${dayName} ${date} ${monthName}`;
+
+            // Update analog watch hands
+            const seconds = now.getSeconds();
+            const minutesWithSeconds = now.getMinutes() + seconds / 60;
+            const hoursWithMinutes = now.getHours() % 12 + minutesWithSeconds / 60;
+
+            const hourHand = document.querySelector('.hour-hand');
+            const minuteHand = document.querySelector('.minute-hand');
+            const secondHand = document.querySelector('.second-hand');
+
+            hourHand.style.transform = `translateX(-50%) rotate(${hoursWithMinutes * 30}deg)`;
+            minuteHand.style.transform = `translateX(-50%) rotate(${minutesWithSeconds * 6}deg)`;
+            secondHand.style.transform = `translateX(-50%) rotate(${seconds * 6}deg)`;
+        }
+
+        // Initialize and update time every second
+        updateWatchTime();
+        setInterval(updateWatchTime, 1000);
+
+        // Add subtle glow effect on hover to watch display
+        const watchDisplay = document.querySelector('.watch-display');
+        watchDisplay.addEventListener('mouseenter', function () {
+            this.style.boxShadow = '0 0 60px rgba(212, 175, 55, 0.4), inset 0 0 40px rgba(255, 255, 255, 0.05)';
+        });
+
+        watchDisplay.addEventListener('mouseleave', function () {
+            this.style.boxShadow = '0 0 40px rgba(212, 175, 55, 0.2), inset 0 0 40px rgba(255, 255, 255, 0.05)';
+        });
+
+        // Filter functions for watches and clocks
+        function filterWatches(category) {
+            let cards = document.querySelectorAll('#watches .card-box');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        function filterClocks(category) {
+            let cards = document.querySelectorAll('#clockes .card-box');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Contact form validation
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                let isValid = true;
+
+                // Reset errors
+                document.querySelectorAll('.error-message').forEach(error => {
+                    error.style.display = 'none';
+                });
+                document.querySelectorAll('.form-control').forEach(input => {
+                    input.classList.remove('error', 'success');
+                });
+
+                // Validate name
+                const name = document.getElementById('name');
+                if (name.value.trim().length < 2) {
+                    document.getElementById('nameError').style.display = 'block';
+                    name.classList.add('error');
+                    isValid = false;
+                } else {
+                    name.classList.add('success');
+                }
+
+                // Validate email
+                const email = document.getElementById('gmail');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email.value)) {
+                    document.getElementById('emailError').style.display = 'block';
+                    email.classList.add('error');
+                    isValid = false;
+                } else {
+                    email.classList.add('success');
+                }
+
+                // Validate subject
+                const subject = document.getElementById('subject');
+                if (!subject.value) {
+                    document.getElementById('subjectError').style.display = 'block';
+                    subject.classList.add('error');
+                    isValid = false;
+                } else {
+                    subject.classList.add('success');
+                }
+
+                // Validate message
+                const message = document.getElementById('message');
+                if (message.value.trim().length < 10) {
+                    document.getElementById('messageError').style.display = 'block';
+                    message.classList.add('error');
+                    isValid = false;
+                } else {
+                    message.classList.add('success');
+                }
+
+                if (isValid) {
+                    // Show success message
+                    document.getElementById('formSuccess').style.display = 'block';
+                    contactForm.reset();
+                    setTimeout(() => {
+                        document.getElementById('formSuccess').style.display = 'none';
+                    }, 5000);
+                }
+            });
+        }
+
+        // Download price list button
+        const downloadBtn = document.getElementById('downloadPriceList');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                alert('Price list download will be available soon!');
+            });
+        }
+
+        // Initialize cart badge
+        document.getElementById("cart-count").style.display = "none";
+
+        // Profile Icon Functionality
+        const profileIcon = document.getElementById('profileIcon');
+        const profileLetter = document.getElementById('profileLetter');
+        const profileIconDefault = document.getElementById('profileIconDefault');
+        const dropdownAvatar = document.getElementById('dropdownAvatar');
+        const dropdownIcon = document.getElementById('dropdownIcon');
+        const dropdownLetter = document.getElementById('dropdownLetter');
+        const dropdownUsername = document.getElementById('dropdownUsername');
+        const dropdownEmail = document.getElementById('dropdownEmail');
+        const loginDropdownBtn = document.getElementById('loginDropdownBtn');
+        const signupDropdownBtn = document.getElementById('signupDropdownBtn');
+        const myProfileBtn = document.getElementById('myProfileBtn');
+        const myOrdersBtn = document.getElementById('myOrdersBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+
+        // Function to check if user is logged in
+        function checkLoginStatus() {
+            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+            const rememberedUser = JSON.parse(localStorage.getItem('rememberedUser'));
+
+            if (currentUser || rememberedUser) {
+                // User is logged in
+                const user = currentUser || rememberedUser;
+                const username = user.username || '';
+                const email = user.email || '';
+
+                // Get first letter of username (capitalized)
+                const firstLetter = username.charAt(0).toUpperCase();
+
+                // Update profile icon
+                profileLetter.textContent = firstLetter;
+                profileLetter.style.display = 'block';
+                profileIconDefault.style.display = 'none';
+
+                // Update dropdown
+                dropdownLetter.textContent = firstLetter;
+                dropdownLetter.style.display = 'block';
+                dropdownIcon.style.display = 'none';
+                dropdownUsername.textContent = username;
+                dropdownEmail.textContent = email;
+
+                // Show logged-in options
+                document.querySelectorAll('.dropdown-item.hidden').forEach(item => {
+                    item.classList.remove('hidden');
+                });
+
+                // Hide login/signup options
+                loginDropdownBtn.classList.add('hidden');
+                signupDropdownBtn.classList.add('hidden');
+            } else {
+                // User is not logged in
+                profileLetter.style.display = 'none';
+                profileIconDefault.style.display = 'block';
+
+                dropdownLetter.style.display = 'none';
+                dropdownIcon.style.display = 'block';
+                dropdownUsername.textContent = 'Guest User';
+                dropdownEmail.textContent = 'Login to access your account';
+
+                // Show login/signup options
+                loginDropdownBtn.classList.remove('hidden');
+                signupDropdownBtn.classList.remove('hidden');
+
+                // Hide logged-in options
+                document.querySelectorAll('.dropdown-item.hidden').forEach(item => {
+                    item.classList.add('hidden');
+                });
+            }
+        }
+
+        // Event Listeners for Profile Dropdown
+        loginDropdownBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.location.href = './login.html?action=login';
+        });
+
+        signupDropdownBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.location.href = './login.html?action=signup';
+        });
+
+        myProfileBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            alert('Profile page will be available soon!');
+        });
+
+        myOrdersBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            alert('Order history will be available soon!');
+        });
+
+        logoutBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Get current user info before logging out
+            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+            const username = currentUser ? currentUser.username : 'User';
+
+            // Clear all user data
+            sessionStorage.removeItem('currentUser');
+            localStorage.removeItem('currentUser');
+
+            // Don't clear rememberedUser if "Remember Me" was checked
+            // Only clear it if user explicitly wants to logout completely
+            const rememberedUser = JSON.parse(localStorage.getItem('rememberedUser'));
+            if (rememberedUser && currentUser && rememberedUser.username === currentUser.username) {
+                // If it's the same user, remove remembered user too
+                localStorage.removeItem('rememberedUser');
+            }
+
+            // Show confirmation with user's name
+            alert(`${username} has been logged out successfully!`);
+
+            // Update UI immediately
+            checkLoginStatus();
+
+            // Clear cart count
+            cartCount = 0;
+            document.getElementById("cart-count").innerText = cartCount;
+            document.getElementById("cart-count").style.display = "none";
+
+            // Refresh page to ensure all state is reset
+            setTimeout(() => {
+                window.location.reload();
+            }, 500);
+        });
+        // Function to check if user is logged in
+        function checkLoginStatus() {
+            const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+            const rememberedUser = JSON.parse(localStorage.getItem('rememberedUser'));
+
+            // User is logged in if either session has currentUser
+            // OR if they have rememberedUser (auto-login)
+            const user = currentUser || rememberedUser;
+
+            if (user) {
+                // User is logged in
+                const username = user.username || '';
+                const email = user.email || '';
+
+                // Get first letter of username (capitalized)
+                const firstLetter = username ? username.charAt(0).toUpperCase() : 'U';
+
+                // Update profile icon
+                profileLetter.textContent = firstLetter;
+                profileLetter.style.display = 'block';
+                profileIconDefault.style.display = 'none';
+
+                // Update dropdown
+                dropdownLetter.textContent = firstLetter;
+                dropdownLetter.style.display = 'block';
+                dropdownIcon.style.display = 'none';
+                dropdownUsername.textContent = username || 'User';
+                dropdownEmail.textContent = email || 'Logged in';
+
+                // Show logged-in options
+                document.querySelectorAll('.dropdown-item.hidden').forEach(item => {
+                    item.classList.remove('hidden');
+                });
+
+                // Hide login/signup options
+                loginDropdownBtn.classList.add('hidden');
+                signupDropdownBtn.classList.add('hidden');
+            } else {
+                // User is not logged in
+                profileLetter.style.display = 'none';
+                profileIconDefault.style.display = 'block';
+
+                dropdownLetter.style.display = 'none';
+                dropdownIcon.style.display = 'block';
+                dropdownUsername.textContent = 'Guest User';
+                dropdownEmail.textContent = 'Login to access your account';
+
+                // Show login/signup options
+                loginDropdownBtn.classList.remove('hidden');
+                signupDropdownBtn.classList.remove('hidden');
+
+                // Hide logged-in options
+                myProfileBtn.classList.add('hidden');
+                myOrdersBtn.classList.add('hidden');
+                logoutBtn.classList.add('hidden');
+            }
+        }
+        // Function to auto-login from remembered user
+        function autoLoginFromRememberedUser() {
+            const rememberedUser = JSON.parse(localStorage.getItem('rememberedUser'));
+            const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+
+            // If there's a remembered user but no current session, auto-login
+            if (rememberedUser && !currentUser) {
+                sessionStorage.setItem('currentUser', JSON.stringify(rememberedUser));
+                console.log('Auto-logged in from remembered user:', rememberedUser.username);
+                return true;
+            }
+            return false;
+        }
+
+        // Call this on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            // Try auto-login first
+            autoLoginFromRememberedUser();
+
+            // Then check login status
+            checkLoginStatus();
+
+            // Listen for storage changes (for cross-page updates)
+            window.addEventListener('storage', function (e) {
+                if (e.key === 'currentUser' || e.key === 'rememberedUser') {
+                    checkLoginStatus();
+                }
+            });
+
+            // Also check when page becomes visible again
+            document.addEventListener('visibilitychange', function () {
+                if (!document.hidden) {
+                    checkLoginStatus();
+                }
+            });
+        });
+        // Mobile touch handling for profile dropdown
+        profileIcon.addEventListener('click', function (e) {
+            if (window.innerWidth <= 768) {
+                e.stopPropagation();
+                profileIcon.parentElement.classList.toggle('mobile-open');
+            }
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!profileIcon.contains(e.target) && !profileDropdown.contains(e.target)) {
+                profileDropdown.style.opacity = '0';
+                profileDropdown.style.visibility = 'hidden';
+                profileIcon.parentElement.classList.remove('mobile-open');
+            }
+        });
+
+        // Close dropdown when clicking on any dropdown item
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function () {
+                profileDropdown.style.opacity = '0';
+                profileDropdown.style.visibility = 'hidden';
+                profileIcon.parentElement.classList.remove('mobile-open');
+
+                // Small delay for transition
+                setTimeout(() => {
+                    profileDropdown.style.display = 'none';
+                }, 300);
+            });
+        });
+
+        // Check login status on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            checkLoginStatus();
+
+            // Listen for storage changes (for cross-page updates)
+            window.addEventListener('storage', function (e) {
+                if (e.key === 'currentUser' || e.key === 'rememberedUser') {
+                    checkLoginStatus();
+                }
+            });
+
+            // Also check when page becomes visible again
+            document.addEventListener('visibilitychange', function () {
+                if (!document.hidden) {
+                    checkLoginStatus();
+                }
+            });
+        });
+
+        // Store login status check function globally
+        window.checkLoginStatus = checkLoginStatus;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Simple Auth Script -->
+    <script>
+        // Simple authentication system
+        class SimpleAuth {
+            constructor() {
+                this.init();
+            }
+
+            init() {
+                this.checkLoginStatus();
+                this.setupEventListeners();
+            }
+
+            checkLoginStatus() {
+                const user = localStorage.getItem('currentUser');
+
+                if (user) {
+                    try {
+                        const userData = JSON.parse(user);
+                        this.updateUI(userData);
+                    } catch (e) {
+                        console.log('Error parsing user data');
+                    }
+                }
+            }
+
+            updateUI(userData) {
+                // Update profile icon
+                const profileLetter = document.getElementById('profileLetter');
+                const profileIcon = document.getElementById('profileIconDefault');
+
+                if (profileLetter && userData.username) {
+                    const firstLetter = userData.username.charAt(0).toUpperCase();
+                    profileLetter.textContent = firstLetter;
+                    profileLetter.style.display = 'block';
+                    if (profileIcon) profileIcon.style.display = 'none';
+                }
+
+                // Update dropdown
+                const dropdownUsername = document.getElementById('dropdownUsername');
+                const dropdownEmail = document.getElementById('dropdownEmail');
+                const dropdownLetter = document.getElementById('dropdownLetter');
+                const dropdownIcon = document.getElementById('dropdownIcon');
+
+                if (dropdownUsername) dropdownUsername.textContent = userData.username || 'User';
+                if (dropdownEmail) dropdownEmail.textContent = userData.email || '';
+                if (dropdownLetter && userData.username) {
+                    dropdownLetter.textContent = userData.username.charAt(0).toUpperCase();
+                    dropdownLetter.style.display = 'block';
+                    if (dropdownIcon) dropdownIcon.style.display = 'none';
+                }
+
+                // Show/hide menu items
+                const loginBtn = document.getElementById('loginDropdownBtn');
+                const signupBtn = document.getElementById('signupDropdownBtn');
+                const logoutBtn = document.getElementById('logoutBtn');
+
+                if (loginBtn) loginBtn.style.display = 'none';
+                if (signupBtn) signupBtn.style.display = 'none';
+                if (logoutBtn) logoutBtn.style.display = 'block';
+            }
+
+            setupEventListeners() {
+                // Logout button
+                const logoutBtn = document.getElementById('logoutBtn');
+                if (logoutBtn) {
+                    logoutBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.logout();
+                    });
+                }
+
+                // Login button
+                const loginBtn = document.getElementById('loginDropdownBtn');
+                if (loginBtn) {
+                    loginBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        window.location.href = 'login.html';
+                    });
+                }
+            }
+
+            logout() {
+                localStorage.removeItem('currentUser');
+                localStorage.removeItem('rememberedUser');
+                alert('Logged out successfully!');
+                window.location.reload();
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            window.auth = new SimpleAuth();
+        });
+
+    </script>
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel">Your Shopping Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+                <div class="text-center py-5" id="emptyCartMessage">
+                    <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+                    <h5>Your cart is empty</h5>
+                    <p class="text-muted">Add some products to your cart</p>
+                </div>
+            </div>
+
+            <div class="cart-summary mt-4 border-top pt-3">
+                <div class="d-flex justify-content-between mb-2">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">Rs 0</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span>Tax (13%):</span>
+                    <span id="cartTax">Rs 0</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <span><strong>Total:</strong></span>
+                    <span><strong id="cartTotal">Rs 0</strong></span>
+                </div>
+                <button class="btn btn-warning w-100 mb-2" id="checkoutBtn" disabled>
+                    <i class="fas fa-lock"></i> Proceed to Checkout
+                </button>
+                <button class="btn btn-outline-light w-100" data-bs-dismiss="offcanvas">
+                    Continue Shopping
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-bottom border-gold">
+                    <h5 class="modal-title" id="checkoutModalLabel">Complete Your Purchase</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkoutForm">
+                        <div class="row">
+                            <!-- Left Column - Order Summary -->
+                            <div class="col-md-6">
+                                <h6 class="mb-3 text-gold">Order Summary</h6>
+                                <div class="order-summary mb-4" id="orderSummary">
+                                    <!-- Order items will be added here -->
+                                </div>
+                                <div class="order-total border-top pt-3">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span>Subtotal:</span>
+                                        <span id="orderSubtotal">Rs 0</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span>Tax (13%):</span>
+                                        <span id="orderTax">Rs 0</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <span><strong>Total:</strong></span>
+                                        <span><strong id="orderTotal">Rs 0</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Column - Shipping Information -->
+                            <div class="col-md-6">
+                                <h6 class="mb-3 text-gold">Shipping Information</h6>
+
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control bg-transparent text-light" id="fullName"
+                                        required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control bg-transparent text-light" id="email"
+                                        required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control bg-transparent text-light" id="phone"
+                                        required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Full Address *</label>
+                                    <textarea class="form-control bg-transparent text-light" id="address" rows="3"
+                                        required></textarea>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="city" class="form-label">City *</label>
+                                        <input type="text" class="form-control bg-transparent text-light" id="city"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="zipCode" class="form-label">ZIP Code *</label>
+                                        <input type="text" class="form-control bg-transparent text-light" id="zipCode"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="paymentMethod" class="form-label">Payment Method *</label>
+                                    <select class="form-control bg-transparent text-light" id="paymentMethod" required>
+                                        <option class="pay" value="">Select Payment Method</option>
+                                        <option class="pay" value="cash">Cash on Delivery</option>
+                                        <option class="pay" value="card">Credit/Debit Card</option>
+                                        <option class="pay" value="bank">Bank Transfer</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                    <label class="form-check-label" for="termsCheck">
+                                        I agree to the terms and conditions
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top border-gold">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-warning" id="confirmOrderBtn">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-bottom border-success">
+                    <h5 class="modal-title" id="successModalLabel">Order Confirmed!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle fa-4x text-success"></i>
+                    </div>
+                    <h4>Thank You for Your Order!</h4>
+                    <p class="mb-3">Your order has been successfully placed.</p>
+                    <p class="text-muted mb-4">Order ID: <span id="orderIdDisplay"></span></p>
+                    <div class="alert alert-info bg-transparent border-info">
+                        <i class="fas fa-info-circle"></i> You will receive a confirmation email shortly.
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-success">
+                    <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">Continue
+                        Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
